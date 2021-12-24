@@ -1,78 +1,74 @@
-module.exports = {
+module.exports= {
 
-	HEADER_BYTES: [0x55, 0x55],
+AT2_HEADER_BYTES: [0x55, 0x55],
+AT2_ADDRESS_BYTES: [0x80, 0xb0],
+//const AT2_ADDRESS_BYTES_EXT: [0x90, 0xb0],
+AT2_MSGTYPE_CCSTAT: 0xC0,
+//const AT2_MSGTYPE_EXT: 0x1F,
+AT2_SUBMSGTYPE_GROUP_CTRL: 0x20,
+AT2_SUBMSGTYPE_GROUP_STAT: 0x21,
+AT2_SUBMSGTYPE_AC_CTRL: 0x22,
+AT2_SUBMSGTYPE_AC_STAT: 0x23,
 
-	ADDRESS_BYTES: [0x80, 0xb0],
+//Doesnt currently use Away or sleep
+AT2_AC_POWER_STATES: { 
+    KEEP: 0,
+    NEXT: 1,
+    OFF: 2,
+    ON: 3
+},
+AT2_AC_MODES: {
+    AUTO: 0,
+    HEAT: 1,
+    DRY: 2,
+    FAN: 3,
+    COOL: 4,
+    KEEP: 5
+},
+AT2_AC_FAN_SPEEDS: {
+    AUTO: 0,
+    QUIET: 1,
+    LOW: 2,
+    MEDIUM: 3,
+    HIGH: 4,
+    POWERFUL: 5,
+    TURBO: 6,
+    KEEP: 7
+},
+AT2_AC_SETPOINT_CONTROL: {
+    KEEP: 0,
+    SET_VALUE: 64
+},
+AT2_GROUP_POWER_STATES_CTRL: {
+    KEEP: 0,
+    NEXT: 1,
+    OFF: 2,
+    ON: 3,
+    TURBO: 5
+},
+AT2_GROUP_POWER_STATES_STAT: {
+    OFF: 0,
+    ON: 1,
+    TURBO: 2
+},
+// const AT2_GROUP_CONTROL_TYPES: {
+//  KEEP: 0,
+//  NEXT: 1,
+//  DAMPER: 2,
+//  TEMPERATURE: 3
+// },
 
-	MSGTYPE_GRP_CTRL: 0x2a,
+AT2_GROUP_SETTING_VALUES: {
+    KEEP: 0,
+    DECREMENT: 2,
+    INCREMENT: 3,
+    SET_VALUE: 4
+},
 
-	MSGTYPE_GRP_STAT: 0x2b,
-
-	MSGTYPE_AC_CTRL: 0x2c,
-
-	MSGTYPE_AC_STAT: 0x2d,
-
-	AC_POWER_STATES: {
-		KEEP: 0,
-		NEXT: 1,
-		OFF: 2,
-		ON: 3
-	},
-
-	AC_MODES: {
-		AUTO: 0,
-		HEAT: 1,
-		DRY: 2,
-		FAN: 3,
-		COOL: 4,
-		KEEP: 5
-	},
-
-	AC_FAN_SPEEDS: {
-		AUTO: 0,
-		QUIET: 1,
-		LOW: 2,
-		MEDIUM: 3,
-		HIGH: 4,
-		POWERFUL: 5,
-		TURBO: 6,
-		KEEP: 7
-	},
-
-	AC_TARGET_TYPES: {
-		KEEP: 0,
-		SET_VALUE: 1,
-		DECREMENT: 2,
-		INCREMENT: 3
-	},
-
-	AC_UNIT_DEFAULT: 0,
-
-	AC_TARGET_KEEP: 63,
-
-	GROUP_POWER_STATES: {
-		KEEP: 0,
-		NEXT: 1,
-		OFF: 2,
-		ON: 3,
-		TURBO: 5
-	},
-
-	GROUP_CONTROL_TYPES: {
-		KEEP: 0,
-		NEXT: 1,
-		DAMPER: 2,
-		TEMPERATURE: 3
-	},
-
-	GROUP_TARGET_TYPES: {
-		KEEP: 0,
-		DECREMENT: 2,
-		INCREMENT: 3,
-		DAMPER: 4,
-		TEMPERATURE: 5
-	},
-
-	GROUP_NUMBER_DEFAULT: 0
+AT2_AC_UNIT_DEFAULT: 0,
+AT2_GROUP_NUMBER_DEFAULT: 0,
+AT2_AC_SETPOINT_DEFAULT: 24, //24 deg celcius
 
 }
+
+
