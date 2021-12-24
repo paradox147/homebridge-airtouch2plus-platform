@@ -1,15 +1,17 @@
 "platforms": [
-	{
-		"platform": "Airtouch",
-		"name": "Airtouch",
-		"ip_address": "192.168.0.52",
-		"units": [
-			{
-				"manufacturer": "LG",
-				"model": "B36AWY-7G6",
-				"fan": ["AUTO", "QUIET", "LOW", "MEDIUM"]
-			}
-		]
-	}
+    {
+        "platform": "Airtouch2",
+        "name": "Airtouch2",
+        "ip_address": "192.168.0.52",
+        "units": [
+            {
+                "manufacturer": "LG",
+                "model": "B36AWY-7G6",
+                "fan": ["LOW", "MEDIUM", "HIGH"]
+            }
+        ]
+    }
 ]
+
+
 
