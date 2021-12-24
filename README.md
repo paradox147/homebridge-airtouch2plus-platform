@@ -6,7 +6,9 @@ based off the homebridge-airtouch4-platform plugin by mihailescu2m
 
 Note: This is currently in alpha, use at your own risk.
 
-## Installation
+## Installation - COMING SOON
+
+NOT YET PUBLISHED TO NPM
 
 1. Install [homebridge](https://github.com/nfarina/homebridge#installation-details)
 2. Install this plugin: `npm install -g homebridge-airtouch2plus-platform`
