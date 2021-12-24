@@ -1,18 +1,18 @@
 {
-  "name": "homebridge-airtouch4-platform",
-  "version": "0.1.4",
-  "description": "Plugin for homebridge to connect to Airtouch4 AC controller",
+  "name": "homebridge-airtouch2plus-platform",
+  "version": "0.0.1",
+  "description": "Plugin for homebridge to connect to Airtouch2+ AC controller",
   "main": "index.js",
   "keywords": [
     "homebridge-plugin",
     "airtouch",
     "air conditioner"
   ],
-  "author": "Marian Mihailescu <mihailescu2m@gmail.com>",
+  "author": "lee hadassin <leehadassin@gmail.com>",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mihailescu2m/homebridge-airtouch4-platform.git"
+    "url": "git+https://github.com/leehadassin/homebridge-airtouch2plus-platform.git"
   },
   "engines": {
     "homebridge": ">=0.2.0",
@@ -23,10 +23,12 @@
     "fakegato-history": "^0.5.6"
   },
   "bugs": {
-    "url": "https://github.com/mihailescu2m/homebridge-airtouch4-platform/issues"
+    "url": "https://github.com/leehadassin/homebridge-airtouch2plus-platform/issues"
   },
-  "homepage": "https://github.com/mihailescu2m/homebridge-airtouch4-platform#readme",
+  "homepage": "https://github.com/leehadassin/homebridge-airtouch2plus-platform#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
+
+
