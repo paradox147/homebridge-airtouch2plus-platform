@@ -1,14 +1,10 @@
 # homebridge-airtouch2plus-platform
 
-#### Homebridge plugin for the Airtouch2+ AC Controller
-
 based off the homebridge-airtouch4-platform plugin by mihailescu2m
 
-Note: This is currently in alpha, use at your own risk.
+#### Homebridge plugin for the Airtouch2+ AC Controller
 
-## Installation - COMING SOON
-
-NOT YET PUBLISHED TO NPM
+## Installation
 
 1. Install [homebridge](https://github.com/nfarina/homebridge#installation-details)
 2. Install this plugin: `npm install -g homebridge-airtouch2plus-platform`
@@ -18,19 +14,19 @@ NOT YET PUBLISHED TO NPM
 
 ```json
 "platforms": [
-    {
-        "platform": "Airtouch2",
-        "name": "Airtouch2",
-        "ip_address": "192.168.0.10",
-        "ac_include_temps": false,
-        "units": [
-            {
-                "manufacturer": "LG",
-                "model": "B36AWY-7G6",
-                "fan": ["AUTO", "QUIET", "LOW", "MEDIUM"]
-            }
-        ]
-    }
+	{
+		"platform": "Airtouch2",
+		"name": "Airtouch2",
+		"ip_address": "192.168.0.10",
+		"ac_include_temps": false,
+		"units": [
+			{
+				"manufacturer": "LG",
+				"model": "B36AWY-7G6",
+				"fan": ["AUTO", "QUIET", "LOW", "MEDIUM"]
+			}
+		]
+	}
 ]
 ```
 
@@ -40,7 +36,7 @@ NOT YET PUBLISHED TO NPM
 | --- | --- |
 | `platform` | Must be `Airtouch2` |
 | `name` | Name for the platform |
-| `ip_address` | Airtouch2 console IP address, can be found under "System Settings" -> "WiFi Settings", click the three-dots icon in the upper right corner, select "Advanced" in the popup menu |
+| `ip_address` | Airtouch4 console IP address, can be found under "System Settings" -> "WiFi Settings", click the three-dots icon in the upper right corner, select "Advanced" in the popup menu |
 | `ac_include_temps` | Add zone temperature information in the AC accessory page |
 | `units` | Array with information about your AC units, containing: |
 | `manufacturer` _(optional)_ | Appears under "Manufacturer" for your AC accessory in the Home app |
