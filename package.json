@@ -1,26 +1,28 @@
 {
   "name": "homebridge-airtouch2plus-platform",
   "version": "0.0.1",
-  "description": "Plugin for homebridge to connect to Airtouch2+ AC controller",
+  "description": "Plugin for Homebridge to connect to Airtouch2+ AC controller",
   "main": "index.js",
   "keywords": [
     "homebridge-plugin",
     "airtouch",
-    "air conditioner"
+    "air conditioner",
+    "airtouch2+"
   ],
-  "author": "lee hadassin <leehadassin@gmail.com>",
+  "author": "Lee Hadassin <leehadassin@gmail.com>",
   "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/leehadassin/homebridge-airtouch2plus-platform.git"
   },
   "engines": {
-    "homebridge": ">=0.2.0",
-    "node": ">=0.12.0"
+    "homebridge": ">=1.3.0",  // Update the minimum required version for Homebridge v2
+    "node": ">=14.0.0"  // Updated Node.js version to match Homebridge v2 requirements
   },
   "dependencies": {
-    "node-persist": "^2.1.0",
-    "fakegato-history": "^0.5.6"
+    "node-persist": "^2.1.0",  // For persistent storage
+    "fakegato-history": "^0.5.6",  // For tracking and history of the accessory state
+    "@homebridge/plugin-helper": "^0.4.0"  // Optional, but useful for advanced plugin development for Homebridge v2
   },
   "bugs": {
     "url": "https://github.com/leehadassin/homebridge-airtouch2plus-platform/issues"
@@ -30,5 +32,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
+
 
 
